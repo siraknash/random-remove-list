@@ -42,13 +42,15 @@
 //
 namespace RRLFlags
 {
-	// Adding an value that already exists anywhere in list has no effect
+	// Adding a value that already exists in the list has no effect
 	static const uint32_t	NO_DUPLICATES	= 0x0001;
 
 	// Elements are added, but will not be available for return until next recycle
 	static const uint32_t	ADD_AS_USED		= 0x0002;
 };
 
+
+//////////////////////////////////////////////////////////////////////////////
 
 template<typename ETYPE>
 class randomremovelist

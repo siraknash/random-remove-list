@@ -25,7 +25,7 @@
 //
 // randomremovelist_r
 //
-// Re-entrant version of randomremove list (see 'randomremovelist.h`)
+// Re-entrant version of random-remove-list (see 'randomremovelist.h`)
 //
 //////////////////////////////////////////////////////////////////////////////
 
@@ -56,7 +56,7 @@ private:
 		::pthread_mutex_lock(&m_mutex);
 	}
 
-	// virtual function which locks mutex for re-entrant version
+	// virtual function which unlocks mutex for re-entrant version
 	virtual void _LIST_ACCESS_END()
 	{
 		::pthread_mutex_unlock(&m_mutex);
